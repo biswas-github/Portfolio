@@ -1,0 +1,58 @@
+body {
+  scroll-behavior: smooth;
+  /* position: relative; */
+  margin-top: 7rem;
+}
+.fixheight {
+  /* height: 60vh; */
+}
+.my-sm-5 {
+  margin-top: 9rem !important;
+}
+
+/* skillsets */
+.skillset-section .skillset-scroll {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #f1f1f1;
+}
+
+/* Visible scrollbar */
+.skillset-section .skillset-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.skillset-section .skillset-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.skillset-section .skillset-scroll::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 10px;
+}
+.skillset-section .skillset-scroll::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Card styling (safe, isolated) */
+.skillset-section .skill-card {
+  flex: 0 0 calc(33.333% - 1rem);
+  min-width: 220px;
+  background: #ffffff;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skillset-section .skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive: show 1 card per view on small devices */
+@media (max-width: 768px) {
+  .skillset-section .skill-card {
+    flex: 0 0 70%;
+  }
+}
